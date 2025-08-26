@@ -1,0 +1,5 @@
+{
+  "name": "Warung POS",
+  "description": "A small-scale Point of Sale (POS) application for Indonesian UMKM (warung/café/shop), optimized for speed, clarity, and reliability. It features transaction management, inventory, customer membership, and sales reporting, all running locally in the browser using IndexedDB.",
+  "requestFramePermissions": []
+}

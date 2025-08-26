@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warung POS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .receipt, .receipt * {
+        color: #000 !important;
+        font-family: 'Courier New', Courier, monospace;
+      }
+      @media print {
+        html, body {
+          background: #fff !important;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+          color: #000 !important;
+        }
+        .receipt, .receipt * {
+          color: #000 !important;
+        }
+        .no-print {
+          display: none !important;
+        }
+        body > div#root > div:first-child {
+          display: none;
+        }
+        body > div#root > div:last-child {
+          width: 100% !important;
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.1.2",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.8.2",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.541.0",
+    "react-select": "https://aistudiocdn.com/react-select@^5.10.2",
+    "dexie-react-hooks": "https://aistudiocdn.com/dexie-react-hooks@^4.2.0",
+    "dexie": "https://aistudiocdn.com/dexie@^4.2.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
